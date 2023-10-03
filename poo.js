@@ -17,3 +17,6 @@ perro.encuentra(persona);
 
 persona.encuentra(perros[0])
 persona.encuentra(perros[1])
+
+(perros[0]).encuentra(persona)
+(perros[1]).encuentra(persona)

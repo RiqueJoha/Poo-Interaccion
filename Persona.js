@@ -5,11 +5,6 @@ class Persona {
     #animo=true;
     #bueno=true;
 
-    constructor(nombre,animo,bueno){
-        this.#nombre=nombre;
-        this.#animo=animo;
-        this.#bueno=bueno;
-    }
     habla(msj) {
         console.log(COLOR_PERSONA, msj);
     }
@@ -22,7 +17,7 @@ class Persona {
     }
 
     encuentra(perro) {
-        if (this.#animo === true) {
+        if (this.#animo > 0) {
         this.habla("Hola " + perro.getNombre())
         this.darDeComer(perro)
     }else{
@@ -31,7 +26,7 @@ class Persona {
        
     }
     darDeComer(perro){
-    if (this.#bueno=== true) {
+    if (this.#bueno> 0) {
         this.habla("Queres comer " + perro.getNombre()+"?")
     }else{
         this.habla("Fuera " + perro.getNombre())

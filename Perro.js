@@ -9,7 +9,7 @@ class Perro {
         this.#nombre=nombre;
         this.#animo=animo;
         this.#hambriento=hambriento;
-    }
+    } 
     setNombre(nuevoNombre) {
         this.#nombre = nuevoNombre
     }
@@ -21,7 +21,7 @@ habla(msj) {
     console.log(COLOR_PERRO, msj);
 }
 encuentra(persona) {
-    if ( this.#animo===true) {
+    if ( this.#animo>0) {
         this.habla("Mueve la cola a " + persona.getNombre())
         this.aceptaComida(persona)
     } else {
@@ -30,7 +30,7 @@ encuentra(persona) {
         
     }
 aceptaComida(persona){
-    if ( this.#hambriento===true) {
+    if ( this.#hambriento>0) {
         this.habla("Acepta el alimento de " + persona.getNombre())
     } else {
         this.habla("Gruñe a " + persona.getNombre())

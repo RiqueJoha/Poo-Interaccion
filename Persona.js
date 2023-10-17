@@ -27,17 +27,12 @@ class Persona {
     }
        
     }
-    darDeComer(Perro){
+    darDeComer(perro){
     if (this.#bueno> 0) {
-        this.habla("Queres comer " + Perro.getNombre()+"?")
-        if (Perro)aceptaComida() {
-            this.habla("Mueve la cola a " + persona.getNombre())
-            this.aceptaComida(persona)
-        } else {
-            this.habla("Ladra a " + persona.getNombre())
-        } 
+        this.habla("Queres comer " + perro.getNombre()+"?")
+       perro.aceptaComida(this)
     }else{
-        this.habla("Fuera " + Perro.getNombre())
+        this.habla("Fuera " + perro.getNombre())
     }
 }
 }

@@ -22,7 +22,7 @@ habla(msj) {
     console.log(COLOR_PERRO, msj);
 }
 encuentra(persona) {
-    if ( this.#animo>0) {
+    if ( this.#animo) {
         this.habla("Mueve la cola a " + persona.getNombre())
         this.aceptaComida(persona)
     } else {

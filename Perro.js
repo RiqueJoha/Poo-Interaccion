@@ -1,5 +1,6 @@
 
 const COLOR_PERRO = '\x1b[34m%s\x1b[0m';
+
 class Perro {
     #nombre = "def nombre"
     #animo=true;

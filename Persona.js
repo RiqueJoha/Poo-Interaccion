@@ -1,5 +1,7 @@
 
 const COLOR_PERSONA='\x1b[32m%s\x1b[0m';
+const Perro = require("./Perro.js");
+
 class Persona {
     #nombre = "def nombre";
     #animo=true;
@@ -16,20 +18,26 @@ class Persona {
         return this.#nombre
     }
 
-    encuentra(perro) {
+    encuentra(Perro) {
         if (this.#animo > 0) {
-        this.habla("Hola " + perro.getNombre())
-        this.darDeComer(perro)
+        this.habla("Hola " + Perro.getNombre())
+        this.darDeComer(Perro)  
     }else{
-        this.habla("Fuera " + perro.getNombre())
+        this.habla("Fuera " + Perro.getNombre())
     }
        
     }
-    darDeComer(perro){
+    darDeComer(Perro){
     if (this.#bueno> 0) {
-        this.habla("Queres comer " + perro.getNombre()+"?")
+        this.habla("Queres comer " + Perro.getNombre()+"?")
+        if (Perro)aceptaComida() {
+            this.habla("Mueve la cola a " + persona.getNombre())
+            this.aceptaComida(persona)
+        } else {
+            this.habla("Ladra a " + persona.getNombre())
+        } 
     }else{
-        this.habla("Fuera " + perro.getNombre())
+        this.habla("Fuera " + Perro.getNombre())
     }
 }
 }
